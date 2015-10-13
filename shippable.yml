@@ -24,4 +24,4 @@ before_script:
 script:
   - go test -coverprofile=coverage.txt -covermode count ./
   
-archive: false
+archive: true
