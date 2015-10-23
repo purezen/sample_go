@@ -5,6 +5,7 @@ go:
 
 env:
   - CI_REPORT=shippable/testresults/junit.xml
+  secure: RSA0THriGA2S7h9CocCwdsUpUYco7MOi3B8C+ZDhTmsuPLTxy5bN4TkR1Ne1E5MFBoKOygMfZmIn/kpUnfjTO355ktkeivsfITXTjRosPoXjGRGAW5kaDPuP25pYLpjdMsNhge0SAUlTMw9/8bRh8f3xmn0cE08mh7HUdEMJs0wxeFDQZfxDNhfyy69V/9TPxBbutOIHEZTU0aRE4smbz5Fj0HwtqU3WvKhf5Vc53u7qI7YK1/sHEd8wdPG6+RWUNTMyswqHFR562UY8hQf3lAuhKNLbmQcuQ1Ivs4V3jn7FjC+EKJMuRvhdA/0Pli5JfqiPjlerE04n79/QqjNPkQ==
 
 before_install:
   - export GOPATH=$SHIPPABLE_GOPATH
