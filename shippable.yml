@@ -2,6 +2,8 @@ language: go
 
 go:
   - 1.2
+  
+install: shippable_retry 'if [ $i -eq 3 ]; then echo "done"; else foobar$i; fi'
 
 env:
   - CI_REPORT=shippable/testresults/junit.xml
