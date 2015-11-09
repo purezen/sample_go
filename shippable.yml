@@ -16,4 +16,4 @@ before_install:
   - go get github.com/onsi/ginkgo
   - go get code.google.com/p/go.tools/cmd/cover
 
-install: shippable_retry 'if [ $i -eq 3 ]; then echo "done"; else foobar$i; fi'
+install: travis_retry 'if [ $i -eq 3 ]; then echo "done"; else foobar$i; fi'
