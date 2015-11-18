@@ -3,10 +3,9 @@ language: go
 go:
   - 1.1
   - 1.0
-  
 
 matrix:
-  exclude:
+  include:
     - gvm: 1.0
       env: foo=bar
 
