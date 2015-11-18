@@ -10,7 +10,7 @@ env:
 
 matrix:
   exclude:
-    - go: 1.0
+    - gvm: 1.0
       env:
         - CI_REPORT=shippable/testresults/junit.xml
 
