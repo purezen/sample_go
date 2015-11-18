@@ -5,6 +5,9 @@ go:
   - 1.0
 
 env:
+  global: foo=bar
+
+env:
   global:
     - secure: fe2jS5KRZkKwWkEQSglkF9NqI5+4S9W+/ntCDVhvPJzfXk8UCjJc3ivQlZRkqn6xnbm5EgSaIiyudVJvDJRLIKrUR1CT0zJpZ87W7Or0XLyCOOIB9ka4C+D6u1Rd9FLZRXR1UoZdjpH6fwyc9Php55AbGrwv+pC+HGp350btwHq4Yqg48tFdsq3p3C56/wYBOouvL/hXvsYmyh1P+4Dyn/yMZO8GdZurspJYZ4VTF6rIAzfY599cTA6hgkKW9mhLCHffkbHFGl7PXwHMlpbSwc7TO/r+zSqQ1q2scHAdsh7LN3MDthkA85j5D5M19pBfpi6uMofwaRL9ARed2Q+FAA==
 
