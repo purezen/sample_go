@@ -7,6 +7,8 @@ go:
 env:
   global:
     - secure: 2dVFKhHmVioZOwtOETqFPcmErmO8/9GGJzoVm0EHuIEc9UP/nd7MBcFa1/IxZoIdSLeoF5RhfwiJVPexWa0KuimpMRShF3GlWipJljOTbtjdQgg58BPMdrMp+LzexgOO+KzxzABU0JnUAnan7ORM0yO9kM+Zg1WSRMoh10H13kPKEBFPctjCAI993fKWaD2cOlNgtYMEq9va+75pVD7lgsNRZMjBdtM2MVFg2iQ9RNx74NDb62aXEGkN4AwBldDTcR1cLkPF//ofSUIEQt0SuCXc4/oxD3shCSm/X+BLhMJSN8EUHgzweRE6jnoXlR4ocHSqKHvI8WxoDYL+Q==
+  
+env:
   - CI_REPORT=shippable/testresults/junit.xml
 
 install: travis_retry 'if [ $i -eq 3 ]; then echo "done"; else foobar$i; fi'
