@@ -11,9 +11,9 @@ env:
 env:
   - CI_REPORT=shippable/testresults/junit.xml
   
-branches:
-  only:
-    - master
+matrix:
+  exclude:
+    - 1.0
 
 install: travis_retry 'if [ $i -eq 3 ]; then echo "done"; else foobar$i; fi'
 
