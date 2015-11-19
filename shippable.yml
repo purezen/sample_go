@@ -1,24 +1,28 @@
 language: go
 
 go:
-  - 1.1
-  - 1.0
+ - 1.1
+ - 1.0
 
 env:
-  global: foo=bar
+ global: 
+   - foo=bar
+   - foo1=bar1
+   - foo2 bar2
+   - foo3 bar3
 
 env:
-  global:
-    - secure: fe2jS5KRZkKwWkEQSglkF9NqI5+4S9W+/ntCDVhvPJzfXk8UCjJc3ivQlZRkqn6xnbm5EgSaIiyudVJvDJRLIKrUR1CT0zJpZ87W7Or0XLyCOOIB9ka4C+D6u1Rd9FLZRXR1UoZdjpH6fwyc9Php55AbGrwv+pC+HGp350btwHq4Yqg48tFdsq3p3C56/wYBOouvL/hXvsYmyh1P+4Dyn/yMZO8GdZurspJYZ4VTF6rIAzfY599cTA6hgkKW9mhLCHffkbHFGl7PXwHMlpbSwc7TO/r+zSqQ1q2scHAdsh7LN3MDthkA85j5D5M19pBfpi6uMofwaRL9ARed2Q+FAA==
+ global:
+   - secure: fe2jS5KRZkKwWkEQSglkF9NqI5+4S9W+/ntCDVhvPJzfXk8UCjJc3ivQlZRkqn6xnbm5EgSaIiyudVJvDJRLIKrUR1CT0zJpZ87W7Or0XLyCOOIB9ka4C+D6u1Rd9FLZRXR1UoZdjpH6fwyc9Php55AbGrwv+pC+HGp350btwHq4Yqg48tFdsq3p3C56/wYBOouvL/hXvsYmyh1P+4Dyn/yMZO8GdZurspJYZ4VTF6rIAzfY599cTA6hgkKW9mhLCHffkbHFGl7PXwHMlpbSwc7TO/r+zSqQ1q2scHAdsh7LN3MDthkA85j5D5M19pBfpi6uMofwaRL9ARed2Q+FAA==
 
 install: travis_retry 'if [ $i -eq 3 ]; then echo "done"; else foobar$i; fi'
 
 before_install:
-  - export GOPATH=$SHIPPABLE_GOPATH
-  - source $HOME/.gvm/scripts/gvm
-  - gvm install go$SHIPPABLE_GO_VERSION
-  - gvm use go$SHIPPABLE_GO_VERSION
-  - go get github.com/t-yuki/gocover-cobertura
-  - go get github.com/onsi/gomega
-  - go get github.com/onsi/ginkgo
-  - go get code.google.com/p/go.tools/cmd/cover
+ - export GOPATH=$SHIPPABLE_GOPATH
+ - source $HOME/.gvm/scripts/gvm
+ - gvm install go$SHIPPABLE_GO_VERSION
+ - gvm use go$SHIPPABLE_GO_VERSION
+ - go get github.com/t-yuki/gocover-cobertura
+ - go get github.com/onsi/gomega
+ - go get github.com/onsi/ginkgo
+ - go get code.google.com/p/go.tools/cmd/cover
